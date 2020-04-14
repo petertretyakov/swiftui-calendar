@@ -13,6 +13,13 @@
 		4D4C4E7D24466C49006BB431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C4E7C24466C49006BB431 /* Assets.xcassets */; };
 		4D4C4E8024466C4A006BB431 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C4E7F24466C4A006BB431 /* Preview Assets.xcassets */; };
 		4D4C4E8324466C4A006BB431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C4E8124466C4A006BB431 /* LaunchScreen.storyboard */; };
+		4D4C4E9324466DEF006BB431 /* CalendarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4C4E8D24466DEF006BB431 /* CalendarButton.swift */; };
+		4D4C4E9424466DEF006BB431 /* CalendarRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4C4E8E24466DEF006BB431 /* CalendarRow.swift */; };
+		4D4C4E9524466DEF006BB431 /* CalendarColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4C4E8F24466DEF006BB431 /* CalendarColors.swift */; };
+		4D4C4E9624466DEF006BB431 /* CalendarTitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4C4E9024466DEF006BB431 /* CalendarTitleRow.swift */; };
+		4D4C4E9724466DEF006BB431 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4C4E9124466DEF006BB431 /* CalendarView.swift */; };
+		4D4C4E9824466DEF006BB431 /* CalendarWeekdaysRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4C4E9224466DEF006BB431 /* CalendarWeekdaysRow.swift */; };
+		4D4C4E9D24466FCA006BB431 /* Calendar+Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4C4E9C24466FCA006BB431 /* Calendar+Week.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		4D4C4E7F24466C4A006BB431 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4D4C4E8224466C4A006BB431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D4C4E8424466C4A006BB431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D4C4E8D24466DEF006BB431 /* CalendarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarButton.swift; path = ../CalendarButton.swift; sourceTree = "<group>"; };
+		4D4C4E8E24466DEF006BB431 /* CalendarRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarRow.swift; path = ../CalendarRow.swift; sourceTree = "<group>"; };
+		4D4C4E8F24466DEF006BB431 /* CalendarColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarColors.swift; path = ../CalendarColors.swift; sourceTree = "<group>"; };
+		4D4C4E9024466DEF006BB431 /* CalendarTitleRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarTitleRow.swift; path = ../CalendarTitleRow.swift; sourceTree = "<group>"; };
+		4D4C4E9124466DEF006BB431 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = ../CalendarView.swift; sourceTree = "<group>"; };
+		4D4C4E9224466DEF006BB431 /* CalendarWeekdaysRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarWeekdaysRow.swift; path = ../CalendarWeekdaysRow.swift; sourceTree = "<group>"; };
+		4D4C4E9C24466FCA006BB431 /* Calendar+Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Week.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,7 @@
 		4D4C4E8A24466C5A006BB431 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4D4C4E8C24466DBE006BB431 /* Calendar */,
 				4D4C4E7624466C46006BB431 /* AppDelegate.swift */,
 				4D4C4E7824466C46006BB431 /* SceneDelegate.swift */,
 				4D4C4E7A24466C46006BB431 /* ContentView.swift */,
@@ -89,6 +104,44 @@
 				4D4C4E8424466C4A006BB431 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4D4C4E8C24466DBE006BB431 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				4D4C4E9B24466FAF006BB431 /* Extension */,
+				4D4C4E9924466F83006BB431 /* Model */,
+				4D4C4E9A24466F92006BB431 /* View */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		4D4C4E9924466F83006BB431 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D4C4E8F24466DEF006BB431 /* CalendarColors.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D4C4E9A24466F92006BB431 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D4C4E9124466DEF006BB431 /* CalendarView.swift */,
+				4D4C4E9024466DEF006BB431 /* CalendarTitleRow.swift */,
+				4D4C4E9224466DEF006BB431 /* CalendarWeekdaysRow.swift */,
+				4D4C4E8E24466DEF006BB431 /* CalendarRow.swift */,
+				4D4C4E8D24466DEF006BB431 /* CalendarButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D4C4E9B24466FAF006BB431 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D4C4E9C24466FCA006BB431 /* Calendar+Week.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +215,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4C4E9424466DEF006BB431 /* CalendarRow.swift in Sources */,
+				4D4C4E9D24466FCA006BB431 /* Calendar+Week.swift in Sources */,
 				4D4C4E7724466C46006BB431 /* AppDelegate.swift in Sources */,
+				4D4C4E9724466DEF006BB431 /* CalendarView.swift in Sources */,
+				4D4C4E9824466DEF006BB431 /* CalendarWeekdaysRow.swift in Sources */,
+				4D4C4E9324466DEF006BB431 /* CalendarButton.swift in Sources */,
+				4D4C4E9524466DEF006BB431 /* CalendarColors.swift in Sources */,
 				4D4C4E7924466C46006BB431 /* SceneDelegate.swift in Sources */,
 				4D4C4E7B24466C46006BB431 /* ContentView.swift in Sources */,
+				4D4C4E9624466DEF006BB431 /* CalendarTitleRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

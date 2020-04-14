@@ -56,12 +56,8 @@
 		4D4C4E7524466C46006BB431 /* SwiftUICalendar */ = {
 			isa = PBXGroup;
 			children = (
-				4D4C4E7624466C46006BB431 /* AppDelegate.swift */,
-				4D4C4E7824466C46006BB431 /* SceneDelegate.swift */,
-				4D4C4E7A24466C46006BB431 /* ContentView.swift */,
-				4D4C4E7C24466C49006BB431 /* Assets.xcassets */,
-				4D4C4E8124466C4A006BB431 /* LaunchScreen.storyboard */,
-				4D4C4E8424466C4A006BB431 /* Info.plist */,
+				4D4C4E8B24466C64006BB431 /* Resources */,
+				4D4C4E8A24466C5A006BB431 /* Sources */,
 				4D4C4E7E24466C4A006BB431 /* Preview Content */,
 			);
 			path = SwiftUICalendar;
@@ -73,6 +69,26 @@
 				4D4C4E7F24466C4A006BB431 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4D4C4E8A24466C5A006BB431 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4D4C4E7624466C46006BB431 /* AppDelegate.swift */,
+				4D4C4E7824466C46006BB431 /* SceneDelegate.swift */,
+				4D4C4E7A24466C46006BB431 /* ContentView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4D4C4E8B24466C64006BB431 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D4C4E7C24466C49006BB431 /* Assets.xcassets */,
+				4D4C4E8124466C4A006BB431 /* LaunchScreen.storyboard */,
+				4D4C4E8424466C4A006BB431 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +304,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICalendar/Preview Content\"";
 				DEVELOPMENT_TEAM = 9M4JY39E84;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUICalendar/Info.plist;
+				INFOPLIST_FILE = SwiftUICalendar/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.petertretyakov.SwiftUICalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +325,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICalendar/Preview Content\"";
 				DEVELOPMENT_TEAM = 9M4JY39E84;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUICalendar/Info.plist;
+				INFOPLIST_FILE = SwiftUICalendar/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.petertretyakov.SwiftUICalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

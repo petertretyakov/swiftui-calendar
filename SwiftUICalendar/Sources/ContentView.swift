@@ -28,9 +28,7 @@ struct ContentView: View {
     }
 
     var body: some View {
-        print(date)
-        print(formatter.string(from: date))
-        return VStack {
+        VStack {
             CalendarView(date: $date, calendar: calendar, colors: colors)
             Text(formatter.string(from: date))
         }

@@ -12,6 +12,7 @@ struct CalendarColors {
     let chevron: Color
     let currentMonth: Color
     let weekday: Button
+    let weekend: Button
     let current: Button
     let other: Button
     let selected: Button

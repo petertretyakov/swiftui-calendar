@@ -42,7 +42,7 @@ struct CalendarView: View {
                 CalendarWeekdaysRow(
                     date: $date,
                     calendar: self.calendar,
-                    color: self.colors.weekday
+                    colors: [self.colors.weekend,self.colors.weekday,self.colors.weekday,self.colors.weekday,self.colors.weekday,self.colors.weekday,self.colors.weekend]
                 )
                 ForEach(self.dates, id: \.self) {
                     CalendarRow(

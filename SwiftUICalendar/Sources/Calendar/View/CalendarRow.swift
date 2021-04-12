@@ -56,5 +56,8 @@ struct CalendarRow: View {
 
     private func select(date: Date) {
         self.date = date
+        let formatter: DateFormatter = DateFormatter()
+        formatter.dateStyle = .full
+        formatter.timeStyle = .none
     }
 }

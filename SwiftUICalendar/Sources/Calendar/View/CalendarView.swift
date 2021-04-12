@@ -30,7 +30,7 @@ struct CalendarView: View {
     }
 
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 40) {
             CalendarTitleRow(
                 month: self.$month,
                 year: self.$year,
@@ -38,7 +38,7 @@ struct CalendarView: View {
                 colors: self.colors,
                 actions: .init(previous: self.previousMonth, current: self.currentMonth, next: self.nextMonth)
             )
-            VStack(spacing: 0) {
+            VStack(spacing: 10) {
                 CalendarWeekdaysRow(
                     date: $date,
                     calendar: self.calendar,
@@ -54,7 +54,7 @@ struct CalendarView: View {
                     )
                 }
             }
-        }
+        }.padding(25)
     }
 
     private func previousMonth() {

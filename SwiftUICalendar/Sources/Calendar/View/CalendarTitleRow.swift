@@ -37,17 +37,17 @@ struct CalendarTitleRow: View {
                 Image(systemName: "chevron.left")
                     .font(.system(size: 24, weight: .semibold, design: .rounded))
                     .foregroundColor(colors.chevron)
-            }
+            }.frame(alignment:.center)
             Button(action: actions.current) {
                 Text("\(self.calendar.standaloneMonthSymbols[self.month - 1]) \(String(describing: self.year))")
                     .font(.system(size: 24, weight: .semibold, design: .rounded))
                     .foregroundColor(colors.currentMonth)
-            }
+            }.frame(minWidth: 200, alignment: .center)
             Button(action: actions.next) {
                 Image(systemName: "chevron.right")
                     .font(.system(size: 24, weight: .semibold, design: .rounded))
                     .foregroundColor(colors.chevron)
-            }
+            }.frame(alignment:.leading)
             Spacer()
         }
     }

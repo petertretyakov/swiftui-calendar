@@ -17,6 +17,7 @@ struct ContentView: View {
         chevron: .black,
         currentMonth: .black,
         weekday: .init(circle: .blue, text: .white),
+        weekend: .init(circle: .purple, text: .white),
         current: .init(circle: .primary, text: .white),
         other: .init(circle: .secondary, text: .white),
         selected: .init(circle: .red, text: .white)

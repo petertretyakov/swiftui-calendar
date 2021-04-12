@@ -13,9 +13,9 @@ struct CalendarWeekdaysRow: View {
 
     private let calendar: Calendar
     private let weekdays: [(text: String, date: Date)]
-    private let color: CalendarColors.Button
+    private let colors: [CalendarColors.Button]
 
-    init(date: Binding<Date>, calendar: Calendar, color: CalendarColors.Button) {
+    init(date: Binding<Date>, calendar: Calendar, colors: [CalendarColors.Button]) {
         self._date = date
 
         self.calendar = calendar
@@ -39,7 +39,7 @@ struct CalendarWeekdaysRow: View {
         }
 
         self.weekdays = (0 ..< weekdays.count).map { (text: weekdays[$0], date: dates[$0]) }
-        self.color = color
+        self.colors = colors
     }
 
     var body: some View {
@@ -49,8 +49,8 @@ struct CalendarWeekdaysRow: View {
                     calendar: self.calendar,
                     date: self.weekdays[$0].date,
                     text: self.weekdays[$0].text,
-                    color: self.color,
-                    action: self.select
+                    color: self.colors[$0],
+                    action: self.select(date:)
                 )
             }
         }
